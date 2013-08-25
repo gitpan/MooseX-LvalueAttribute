@@ -1,0 +1,43 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 2f73cf43803c48ffc1cf841b1d17b246a0c9470e COPYRIGHT
+SHA1 b2935f235da8a307ab61bcbf5262c5bee6023b36 CREDITS
+SHA1 8e71e0b2b7e36bd940dd7aeb3033a6b4a3ffec8a Changes
+SHA1 8a589231026af5f34dab45b4d0b70eb707dd4308 LICENSE
+SHA1 c30c46513783a112576c926e050cad44e74f3fb5 MANIFEST
+SHA1 f7835199fd908a99f455f37693df424ba494a7ff META.json
+SHA1 7cc707bebf377678e4437b10c5a07e81b5028310 META.ttl
+SHA1 38bbb5282f237be00e5f051bb13bb9073ed85d91 META.yml
+SHA1 15508f99b442391e9ebd6ee60d6c6b592451e0d8 Makefile.PL
+SHA1 aba6dc9542f3179d2cc91f6c86dc14e6d8ef6f30 README
+SHA1 2fd04771360b1203fe51f5a1ff5a31403fbda3ed dist.ini
+SHA1 7623023c22c440a31ddf94fb6d7104b89027537b lib/MooseX/LvalueAttribute.pm
+SHA1 5ffddf6e0ee64cb9b06064117f6d7e090f02c675 lib/MooseX/LvalueAttribute/Trait/Accessor.pm
+SHA1 6509c2a4144e311344a4c8cd8bbc00864b606f02 lib/MooseX/LvalueAttribute/Trait/Attribute.pm
+SHA1 041d357ba2223c1d00d6eb4a84563db135d1ef16 lib/MooseX/Meta/Attribute/Lvalue.pm
+SHA1 e234152510260929c988bb86a0bfeb5c612a0454 t/01basic.t
+SHA1 e92eedfe65552c96c1d17cb924a70e4567f8f46c t/02typeconstraints.t
+SHA1 f85e00bf4a0b9ff37c155691fd63b837f55fa979 t/03typecoercions.t
+SHA1 a1591d37e76caaf01c7ab3c1f4eba0986b49695c t/04triggers.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iEYEARECAAYFAlIae/gACgkQzr+BKGoqfTnhwgCgqRThA1/Sv2IDewqlyhuHKkjk
+SQEAnAl6S9w/QrLqQ5jcujvyADFfzV6l
+=8xup
+-----END PGP SIGNATURE-----
