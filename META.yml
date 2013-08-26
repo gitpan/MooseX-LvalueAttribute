@@ -27,22 +27,22 @@ no_index:
 provides:
   Moose::Meta::Attribute::Custom::Trait::Lvalue:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.900_01
+    version: 0.900_02
   Moose::Meta::Attribute::Custom::Trait::lvalue:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.900_01
+    version: 0.900_02
   MooseX::LvalueAttribute:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.900_01
+    version: 0.900_02
   MooseX::LvalueAttribute::Trait::Accessor:
     file: lib/MooseX/LvalueAttribute/Trait/Accessor.pm
-    version: 0.900_01
+    version: 0.900_02
   MooseX::LvalueAttribute::Trait::Attribute:
     file: lib/MooseX/LvalueAttribute/Trait/Attribute.pm
-    version: 0.900_01
+    version: 0.900_02
   MooseX::Meta::Attribute::Lvalue:
     file: lib/MooseX/Meta/Attribute/Lvalue.pm
-    version: 0.900_01
+    version: 0.900_02
 requires:
   Hash::Util::FieldHash::Compat: 0
   Moose: 2.0000
@@ -53,5 +53,5 @@ resources:
   homepage: https://metacpan.org/release/MooseX-LvalueAttribute
   license: http://dev.perl.org/licenses/
   repository: https://github.com/tobyink/p5-moosex-lvalueattribute
-version: 0.900_01
+version: 0.900_02
 x_provides_scripts: {}

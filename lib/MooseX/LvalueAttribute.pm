@@ -1,20 +1,31 @@
 package MooseX::LvalueAttribute;
 
-our $VERSION   = '0.900_01';
+use strict;
+use warnings;
+
+our $VERSION   = '0.900_02';
 our $AUTHORITY = 'cpan:TOBYINK';
 
 my $implementation = 'MooseX::LvalueAttribute::Trait::Attribute';
+my $constant       = sub () { $implementation };
+
+use Sub::Exporter -setup => {
+	exports => [ 'lvalue' => sub { $constant } ],
+};
+
+our $INLINE;
+$INLINE = 1 unless defined $INLINE;
 
 {
 	package Moose::Meta::Attribute::Custom::Trait::Lvalue;
-	our $VERSION   = '0.900_01';
+	our $VERSION   = '0.900_02';
 	our $AUTHORITY = 'cpan:TOBYINK';
 	sub register_implementation { $implementation }
 }
 
 {
 	package Moose::Meta::Attribute::Custom::Trait::lvalue;
-	our $VERSION   = '0.900_01';
+	our $VERSION   = '0.900_02';
 	our $AUTHORITY = 'cpan:TOBYINK';
 	sub register_implementation { $implementation }
 }
@@ -79,10 +90,25 @@ L<http://perldoc.perl.org/perlsub.html#Lvalue-subroutines>
 Type constraints and coercions still work for lvalue attributes.
 Triggers still fire. Everything should just work. (Unless it doesn't.)
 
+You can optionally import a constants called C<< lvalue >> that
+expands to the full name of the attribute trait, allowing:
+
+   use MooseX::LvalueAttribute 'lvalue';
+   
+   has name => (
+      traits      => [ lvalue ],
+      is          => 'rw',
+      isa         => 'Str',
+      required    => 1,
+   );
+
+This may allow Moose to compile your attribute very, very, slightly
+faster, but the main advantage is aesthetic.
+
 =head1 BUGS
 
 Please report any bugs to
-L<http://rt.cpan.org/Dist/Display.html?Queue=MooseX-Meta-Attribute-Lvalue>.
+L<http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute>.
 
 =head1 SEE ALSO
 

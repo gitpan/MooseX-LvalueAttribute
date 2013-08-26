@@ -34,20 +34,20 @@ my $meta = {
                                          },
                           },
   "provides"           => {
-                            "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_01" },
-                            "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_01" },
-                            "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_01" },
+                            "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
+                            "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
+                            "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
                             "MooseX::LvalueAttribute::Trait::Accessor"      => {
                                                                                  file => "lib/MooseX/LvalueAttribute/Trait/Accessor.pm",
-                                                                                 version => "0.900_01",
+                                                                                 version => "0.900_02",
                                                                                },
                             "MooseX::LvalueAttribute::Trait::Attribute"     => {
                                                                                  file => "lib/MooseX/LvalueAttribute/Trait/Attribute.pm",
-                                                                                 version => "0.900_01",
+                                                                                 version => "0.900_02",
                                                                                },
                             "MooseX::Meta::Attribute::Lvalue"               => {
                                                                                  file => "lib/MooseX/Meta/Attribute/Lvalue.pm",
-                                                                                 version => "0.900_01",
+                                                                                 version => "0.900_02",
                                                                                },
                           },
   "release_status"     => "testing",
@@ -63,7 +63,7 @@ my $meta = {
                                             },
                             X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project",
                           },
-  "version"            => "0.900_01",
+  "version"            => "0.900_02",
   "x_provides_scripts" => {},
 };
 
