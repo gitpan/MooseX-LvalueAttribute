@@ -10,7 +10,7 @@ my $meta = {
                             "Christopher Brown (CTBROWN) <ctbrown\@cpan.org>",
                           ],
   "dynamic_config"     => 0,
-  "generated_by"       => "Dist::Inkt::Profile::TOBYINK version 0.006, CPAN::Meta::Converter version 2.120921",
+  "generated_by"       => "Dist::Inkt::Profile::TOBYINK version 0.007, CPAN::Meta::Converter version 2.120921",
   "keywords"           => [],
   "license"            => ["perl_5"],
   "meta-spec"          => {
@@ -34,23 +34,20 @@ my $meta = {
                                          },
                           },
   "provides"           => {
-                            "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
-                            "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
-                            "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.900_02" },
+                            "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
+                            "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
+                            "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
                             "MooseX::LvalueAttribute::Trait::Accessor"      => {
                                                                                  file => "lib/MooseX/LvalueAttribute/Trait/Accessor.pm",
-                                                                                 version => "0.900_02",
+                                                                                 version => "0.980",
                                                                                },
                             "MooseX::LvalueAttribute::Trait::Attribute"     => {
                                                                                  file => "lib/MooseX/LvalueAttribute/Trait/Attribute.pm",
-                                                                                 version => "0.900_02",
+                                                                                 version => "0.980",
                                                                                },
-                            "MooseX::Meta::Attribute::Lvalue"               => {
-                                                                                 file => "lib/MooseX/Meta/Attribute/Lvalue.pm",
-                                                                                 version => "0.900_02",
-                                                                               },
+                            "MooseX::Meta::Attribute::Lvalue"               => { file => "lib/MooseX/Meta/Attribute/Lvalue.pm", version => "0.980" },
                           },
-  "release_status"     => "testing",
+  "release_status"     => "stable",
   "resources"          => {
                             bugtracker   => {
                                               web => "http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute",
@@ -63,7 +60,7 @@ my $meta = {
                                             },
                             X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project",
                           },
-  "version"            => "0.900_02",
+  "version"            => "0.980",
   "x_provides_scripts" => {},
 };
 

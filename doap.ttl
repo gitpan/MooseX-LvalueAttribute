@@ -27,7 +27,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/ctbrown>, <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "MooseX-LvalueAttribute";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_02>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-980>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-moosex-lvalueattribute>;
@@ -62,6 +62,15 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-LvalueAttribute-0.900_02.tar.gz>;
 	doap:revision        "0.900_02"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-980>
+	a                    doap:Version;
+	dc:identifier        "MooseX-LvalueAttribute-0.980"^^xsd:string;
+	dc:issued            "2013-08-27"^^xsd:date;
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-LvalueAttribute-0.980.tar.gz>;
+	doap:revision        "0.980"^^xsd:string;
+	rdfs:comment         "No functional changes".
 
 <http://purl.org/NET/cpan-uri/dist/MooseX-Meta-Attribute-Lvalue/project>
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/ctbrown>;

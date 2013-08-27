@@ -5,12 +5,12 @@ Changes
 LICENSE
 MANIFEST
 META.json
-META.ttl
 META.yml
 Makefile.PL
 README
 SIGNATURE
 dist.ini
+doap.ttl
 examples/benchmarking.pl
 lib/MooseX/LvalueAttribute.pm
 lib/MooseX/LvalueAttribute/Trait/Accessor.pm
