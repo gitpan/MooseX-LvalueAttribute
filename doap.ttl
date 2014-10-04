@@ -14,9 +14,9 @@
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap-deps:develop-recommendation [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
-	doap-deps:runtime-requirement [ doap-deps:on "Moose 2.0000"^^doap-deps:CpanId ], [ doap-deps:on "Variable::Magic"^^doap-deps:CpanId ], [
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008"^^doap-deps:CpanId ], [ doap-deps:on "Moose 2.0000"^^doap-deps:CpanId ], [ doap-deps:on "Variable::Magic"^^doap-deps:CpanId ], [
 		doap-deps:on "Hash::Util::FieldHash::Compat"^^doap-deps:CpanId;
-	];
+	], [ doap-deps:on "Exporter::Shiny"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ], [ doap-deps:on "Test::Fatal"^^doap-deps:CpanId ], [ doap-deps:on "Test::Requires"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute>;
 	doap:created         "2013-08-24"^^xsd:date;
@@ -27,7 +27,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/ctbrown>, <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "MooseX-LvalueAttribute";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-980>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-980>, <http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-981>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-moosex-lvalueattribute>;
@@ -71,6 +71,23 @@
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-LvalueAttribute-0.980.tar.gz>;
 	doap:revision        "0.980"^^xsd:string;
 	rdfs:comment         "No functional changes".
+
+<http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/v_0-981>
+	a                    doap:Version;
+	dc:identifier        "MooseX-LvalueAttribute-0.981"^^xsd:string;
+	dc:issued            "2014-10-04"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "Use Exporter::Tiny instead of Sub::Exporter.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Explicitly depend on Perl 5.8.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-LvalueAttribute-0.981.tar.gz>;
+	doap:revision        "0.981"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/dist/MooseX-Meta-Attribute-Lvalue/project>
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/ctbrown>;

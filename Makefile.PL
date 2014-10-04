@@ -1,82 +1,85 @@
 use strict;
 use ExtUtils::MakeMaker 6.17;
 
-my $EUMM = 'ExtUtils::MakeMaker'->VERSION;
+my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 
 my $meta = {
-  "abstract"           => "lvalue attributes for Moose",
-  "author"             => [
-                            "Toby Inkster (TOBYINK) <tobyink\@cpan.org>",
-                            "Christopher Brown (CTBROWN) <ctbrown\@cpan.org>",
-                          ],
-  "dynamic_config"     => 0,
-  "generated_by"       => "Dist::Inkt::Profile::TOBYINK version 0.007, CPAN::Meta::Converter version 2.120921",
-  "keywords"           => [],
-  "license"            => ["perl_5"],
-  "meta-spec"          => {
-                            url => "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-                            version => 2,
-                          },
-  "name"               => "MooseX-LvalueAttribute",
-  "no_index"           => { directory => ["eg", "examples", "inc", "t", "xt"] },
-  "prereqs"            => {
-                            configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                            develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                            runtime   => {
-                                           requires => {
-                                             "Hash::Util::FieldHash::Compat" => 0,
-                                             "Moose" => "2.0000",
-                                             "Variable::Magic" => 0,
-                                           },
-                                         },
-                            test      => {
-                                           requires => { "Test::Fatal" => 0, "Test::More" => 0.96, "Test::Requires" => 0 },
-                                         },
-                          },
-  "provides"           => {
-                            "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
-                            "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
-                            "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => "0.980" },
-                            "MooseX::LvalueAttribute::Trait::Accessor"      => {
-                                                                                 file => "lib/MooseX/LvalueAttribute/Trait/Accessor.pm",
-                                                                                 version => "0.980",
-                                                                               },
-                            "MooseX::LvalueAttribute::Trait::Attribute"     => {
-                                                                                 file => "lib/MooseX/LvalueAttribute/Trait/Attribute.pm",
-                                                                                 version => "0.980",
-                                                                               },
-                            "MooseX::Meta::Attribute::Lvalue"               => { file => "lib/MooseX/Meta/Attribute/Lvalue.pm", version => "0.980" },
-                          },
-  "release_status"     => "stable",
-  "resources"          => {
-                            bugtracker   => {
-                                              web => "http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute",
-                                            },
-                            homepage     => "https://metacpan.org/release/MooseX-LvalueAttribute",
-                            license      => ["http://dev.perl.org/licenses/"],
-                            repository   => {
-                                              type => "git",
-                                              web  => "https://github.com/tobyink/p5-moosex-lvalueattribute",
-                                            },
-                            X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project",
-                          },
-  "version"            => "0.980",
-  "x_provides_scripts" => {},
+  "abstract"       => "lvalue attributes for Moose",
+  "author"         => [
+                        "Toby Inkster (TOBYINK) <tobyink\@cpan.org>",
+                        "Christopher Brown (CTBROWN) <ctbrown\@cpan.org>",
+                      ],
+  "dynamic_config" => 0,
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
+  "keywords"       => [],
+  "license"        => ["perl_5"],
+  "meta-spec"      => {
+                        url => "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+                        version => 2,
+                      },
+  "name"           => "MooseX-LvalueAttribute",
+  "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
+  "prereqs"        => {
+                        configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
+                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
+                        runtime   => {
+                                       requires => {
+                                         "Exporter::Shiny" => 0,
+                                         "Hash::Util::FieldHash::Compat" => 0,
+                                         "Moose" => "2.0000",
+                                         "perl" => 5.008,
+                                         "Variable::Magic" => 0,
+                                       },
+                                     },
+                        test      => {
+                                       requires => { "Test::Fatal" => 0, "Test::More" => 0.96, "Test::Requires" => 0 },
+                                     },
+                      },
+  "provides"       => {
+                        "Moose::Meta::Attribute::Custom::Trait::lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => 0.981 },
+                        "Moose::Meta::Attribute::Custom::Trait::Lvalue" => { file => "lib/MooseX/LvalueAttribute.pm", version => 0.981 },
+                        "MooseX::LvalueAttribute"                       => { file => "lib/MooseX/LvalueAttribute.pm", version => 0.981 },
+                        "MooseX::LvalueAttribute::Trait::Accessor"      => {
+                                                                             file => "lib/MooseX/LvalueAttribute/Trait/Accessor.pm",
+                                                                             version => 0.981,
+                                                                           },
+                        "MooseX::LvalueAttribute::Trait::Attribute"     => {
+                                                                             file => "lib/MooseX/LvalueAttribute/Trait/Attribute.pm",
+                                                                             version => 0.981,
+                                                                           },
+                        "MooseX::Meta::Attribute::Lvalue"               => { file => "lib/MooseX/Meta/Attribute/Lvalue.pm", version => 0.981 },
+                      },
+  "release_status" => "stable",
+  "resources"      => {
+                        bugtracker   => {
+                                          web => "http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute",
+                                        },
+                        homepage     => "https://metacpan.org/release/MooseX-LvalueAttribute",
+                        license      => ["http://dev.perl.org/licenses/"],
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-moosex-lvalueattribute.git",
+                                          web  => "https://github.com/tobyink/p5-moosex-lvalueattribute",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project",
+                      },
+  "version"        => 0.981,
 };
 
 my %dynamic_config;
 
 my %WriteMakefileArgs = (
-	ABSTRACT           => $meta->{abstract},
-	AUTHOR             => ($EUMM >= 6.5702 ? $meta->{author} : $meta->{author}[0]),
-	DISTNAME           => $meta->{name},
-	VERSION            => $meta->{version},
-	EXE_FILES          => [ map $_->{file}, values %{ $meta->{x_provides_scripts} || {} } ],
-	NAME               => do { my $n = $meta->{name}; $n =~ s/-/::/g; $n },
+	ABSTRACT   => $meta->{abstract},
+	AUTHOR     => ($EUMM >= 6.5702 ? $meta->{author} : $meta->{author}[0]),
+	DISTNAME   => $meta->{name},
+	VERSION    => $meta->{version},
+	EXE_FILES  => [ map $_->{file}, values %{ $meta->{x_provides_scripts} || {} } ],
+	NAME       => do { my $n = $meta->{name}; $n =~ s/-/::/g; $n },
+	test       => { TESTS => "t/*.t" },
 	%dynamic_config,
 );
 
-$WriteMakefileArgs{LICENSE} => $meta->{license}[0] if $EUMM >= 6.3001;
+$WriteMakefileArgs{LICENSE} = $meta->{license}[0] if $EUMM >= 6.3001;
 
 sub deps
 {
@@ -85,6 +88,7 @@ sub deps
 	{
 		for my $dep (keys %{$meta->{prereqs}{$stage}{requires}})
 		{
+			next if $dep eq 'perl';
 			my $ver = $meta->{prereqs}{$stage}{requires}{$dep};
 			$r{$dep} = $ver if !exists($r{$dep}) || $ver >= $r{$dep};
 		}
@@ -117,16 +121,19 @@ else
 }
 
 {
-	my $minperl = delete $WriteMakefileArgs{PREREQ_PM}{perl};
-	exists($WriteMakefileArgs{$_}) && delete($WriteMakefileArgs{$_}{perl})
-		for qw(BUILD_REQUIRES TEST_REQUIRES CONFIGURE_REQUIRES);
-	if ($minperl and $EUMM >= 6.48)
+	my ($minperl) = reverse sort(
+		grep defined && /^[0-9]+(\.[0-9]+)?$/,
+		map $meta->{prereqs}{$_}{requires}{perl},
+		qw( configure build runtime )
+	);
+	
+	if (defined($minperl))
 	{
-		$WriteMakefileArgs{MIN_PERL_VERSION} ||= $minperl;
-	}
-	elsif ($minperl)
-	{
-		die "Need Perl >= $minperl" unless $] >= $minperl;
+		die "Installing $meta->{name} requires Perl >= $minperl"
+			unless $] >= $minperl;
+		
+		$WriteMakefileArgs{MIN_PERL_VERSION} ||= $minperl
+			if $EUMM >= 6.48;
 	}
 }
 

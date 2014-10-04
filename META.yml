@@ -4,18 +4,18 @@ author:
   - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
   - 'Christopher Brown (CTBROWN) <ctbrown@cpan.org>'
 build_requires:
-  Test::Fatal: 0
-  Test::More: 0.96
-  Test::Requires: 0
+  Test::Fatal: '0'
+  Test::More: '0.96'
+  Test::Requires: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.17
+  ExtUtils::MakeMaker: '6.17'
 dynamic_config: 0
-generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.007, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640'
 keywords: []
-license: unknown
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: MooseX-LvalueAttribute
 no_index:
   directory:
@@ -24,34 +24,36 @@ no_index:
     - inc
     - t
     - xt
+optional_features: {}
 provides:
   Moose::Meta::Attribute::Custom::Trait::Lvalue:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.980
+    version: '0.981'
   Moose::Meta::Attribute::Custom::Trait::lvalue:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.980
+    version: '0.981'
   MooseX::LvalueAttribute:
     file: lib/MooseX/LvalueAttribute.pm
-    version: 0.980
+    version: '0.981'
   MooseX::LvalueAttribute::Trait::Accessor:
     file: lib/MooseX/LvalueAttribute/Trait/Accessor.pm
-    version: 0.980
+    version: '0.981'
   MooseX::LvalueAttribute::Trait::Attribute:
     file: lib/MooseX/LvalueAttribute/Trait/Attribute.pm
-    version: 0.980
+    version: '0.981'
   MooseX::Meta::Attribute::Lvalue:
     file: lib/MooseX/Meta/Attribute/Lvalue.pm
-    version: 0.980
+    version: '0.981'
 requires:
-  Hash::Util::FieldHash::Compat: 0
-  Moose: 2.0000
-  Variable::Magic: 0
+  Exporter::Shiny: '0'
+  Hash::Util::FieldHash::Compat: '0'
+  Moose: '2.0000'
+  Variable::Magic: '0'
+  perl: '5.008'
 resources:
-  X_identifier: http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project
+  Identifier: http://purl.org/NET/cpan-uri/dist/MooseX-LvalueAttribute/project
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute
   homepage: https://metacpan.org/release/MooseX-LvalueAttribute
   license: http://dev.perl.org/licenses/
-  repository: https://github.com/tobyink/p5-moosex-lvalueattribute
-version: 0.980
-x_provides_scripts: {}
+  repository: git://github.com/tobyink/p5-moosex-lvalueattribute.git
+version: '0.981'

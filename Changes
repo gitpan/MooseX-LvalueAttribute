@@ -7,15 +7,24 @@ Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-LvalueAttribute
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 Maintainer:   Christopher Brown (CTBROWN) <ctbrown@cpan.org>
 
-0.980	2013-08-27
+0.981	2014-10-04
 
+ [ Packaging ]
+ - Explicitly depend on Perl 5.8.
+
+ [ Other ]
+ - Use Exporter::Tiny instead of Sub::Exporter.
+
+0.980	2013-08-27
 
 0.900_02	2013-08-26
 
- - (Addition) Export an `lvalue` constant.
- - (Change) Use inlining where possible to speed up lvalue accessors.
-   Getting a reasonable speed.
- - (Documentation) Change bug tracker link.
+ [ Documentation ]
+ - Change bug tracker link.
+
+ [ Other ]
+ - Added: Export an `lvalue` constant.
+ - Use inlining where possible to speed up lvalue accessors. Getting a
+   reasonable speed.
 
 0.900_01	2013-08-25	Preview for a fork/replacement for MooseX-Meta-Attribute-Lvalue
-
